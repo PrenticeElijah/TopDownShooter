@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 5770f5514523d80429c0aae4ff2c2354
+guid: 992a82fb1c15916458f8c75a53c21013
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6554736390298987251
-    second: cursor_0
+      213: -5963901802341623262
+    second: floatskull_blue_0
+  - first:
+      213: -2937134740614731518
+    second: floatskull_blue_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -48,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 36
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,22 +116,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cursor_0
+      name: floatskull_blue_0
       rect:
         serializedVersion: 2
-        x: 612
-        y: 132
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efb768b408549044eac7931f5e6b6de1
-      internalID: 6554736390298987251
+      spriteID: af90db707e0b7164096173a30660d698
+      internalID: -5963901802341623262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floatskull_blue_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432faeacd16ff264e97852d1dec8aca2
+      internalID: -2937134740614731518
       vertices: []
       indices: 
       edges: []
