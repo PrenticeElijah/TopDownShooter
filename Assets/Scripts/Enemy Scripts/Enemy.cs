@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class Enemy : MonoBehaviour
 {
     
-    public float speed;
+    public float speed;     // the enemy's speed
     public int health;      // the enemy's health. the enemy will deactivate if <= 0
 
     protected Rigidbody2D enemyRig;   // enemy's rigidbody
@@ -32,5 +32,5 @@ public abstract class Enemy : MonoBehaviour
 
     public abstract void AttackPlayer();        // find and attack the player
     public abstract void Health(int damage);    // decrement health and alter the enemy's behavior
-    public abstract void Animation();
+    public abstract void Animation();           // handles animations of the enemy
 }

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    
+    public int health;              // the health of the player, reset after reaching 0
+
     public float moveSpeed;         // the speed of the player character
     Rigidbody2D playerRig;          // the player's rigidbody
     

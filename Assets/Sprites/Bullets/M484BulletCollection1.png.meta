@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 4247070647218704702
     second: blue_bullet
+  - first:
+      213: -6608487440453431181
+    second: red_bullet
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -121,7 +124,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,6 +132,27 @@ TextureImporter:
       bones: []
       spriteID: 63e08fe057248774899e0ded46e25c58
       internalID: 4247070647218704702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red_bullet
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 12
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d287504f9259cbe4db95d8f367bc0c05
+      internalID: -6608487440453431181
       vertices: []
       indices: 
       edges: []
