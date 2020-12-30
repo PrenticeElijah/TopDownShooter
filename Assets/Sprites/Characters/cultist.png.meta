@@ -1,25 +1,43 @@
 fileFormatVersion: 2
-guid: 992a82fb1c15916458f8c75a53c21013
+guid: 8dd325d441b09d94192fee3b046014ec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5963901802341623262
-    second: floatskull_blue_0
+      213: 5993622397579352850
+    second: cultist_side_0
   - first:
-      213: -2937134740614731518
-    second: floatskull_blue_1
+      213: -4711514393958433416
+    second: cultist_side_1
   - first:
-      213: 8609948522970643223
-    second: floatskull_yellow_0
+      213: -9071557467459025814
+    second: cultist_side_2
   - first:
-      213: 8088780987781310845
-    second: floatskull_yellow_1
+      213: -117227970986988886
+    second: cultist_side_3
   - first:
-      213: 4442941302664998970
-    second: floatskull_purple_0
+      213: 397204791185572381
+    second: cultist_up_0
   - first:
-      213: -23729297926369838
-    second: floatskull_purple_1
+      213: 7403581975477281843
+    second: cultist_up_1
+  - first:
+      213: -5310667763567266213
+    second: cultist_up_2
+  - first:
+      213: -5222975113614495488
+    second: cultist_up_3
+  - first:
+      213: 451717677299538235
+    second: cultist_down_0
+  - first:
+      213: 454361980178235850
+    second: cultist_down_1
+  - first:
+      213: 5579783047967411169
+    second: cultist_down_2
+  - first:
+      213: -8714639711325575191
+    second: cultist_down_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -128,49 +146,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: floatskull_blue_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af90db707e0b7164096173a30660d698
-      internalID: -5963901802341623262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floatskull_blue_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 432faeacd16ff264e97852d1dec8aca2
-      internalID: -2937134740614731518
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floatskull_yellow_0
+      name: cultist_side_0
       rect:
         serializedVersion: 2
         x: 0
@@ -184,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 579318cc5b1948f4e9f821aaa4f2456d
-      internalID: 8609948522970643223
+      spriteID: b6d13c95540e0f349b34e9da72c56b97
+      internalID: 5993622397579352850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floatskull_yellow_1
+      name: cultist_side_1
       rect:
         serializedVersion: 2
         x: 16
@@ -205,14 +181,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ee170149f450994c90416891f1923cb
-      internalID: 8088780987781310845
+      spriteID: 25b797bbe544dc34db57a929870e9010
+      internalID: -4711514393958433416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floatskull_purple_0
+      name: cultist_side_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed52da61f8e83144b92863a2105137a
+      internalID: -9071557467459025814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist_side_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aeb0670168a8874f967ce66a17b96aa
+      internalID: -117227970986988886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bddef6080a0d7f409eb5ca4dd304e88
+      internalID: 397204791185572381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist_up_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a68da03736af164cace25d7eaee7c18
+      internalID: 7403581975477281843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist_up_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c7ebcb1682c6f4b81dc571b6ce2937
+      internalID: -5310667763567266213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist_up_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518e2116b3d48024c9db250b5acff904
+      internalID: -5222975113614495488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist_down_0
       rect:
         serializedVersion: 2
         x: 0
@@ -226,14 +328,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98076525af575744f824eed0af62d42c
-      internalID: 4442941302664998970
+      spriteID: fbda3486d2bb3834594d1d9e5eb199eb
+      internalID: 451717677299538235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floatskull_purple_1
+      name: cultist_down_1
       rect:
         serializedVersion: 2
         x: 16
@@ -247,8 +349,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcf4a9fac41ce7e4cad3a07b044f6635
-      internalID: -23729297926369838
+      spriteID: 9752edf41070002429b889f54c5364a3
+      internalID: 454361980178235850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist_down_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21eb8d76838d8ba4fb4671219e5a1848
+      internalID: 5579783047967411169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist_down_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e1af0f6f833a0418b30687b245f4b5
+      internalID: -8714639711325575191
       vertices: []
       indices: 
       edges: []

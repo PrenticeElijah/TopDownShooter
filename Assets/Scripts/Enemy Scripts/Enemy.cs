@@ -5,19 +5,32 @@ using UnityEngine;
 public abstract class Enemy : MonoBehaviour
 {
     
+    public float speed;
     public int health;      // the enemy's health. the enemy will deactivate if <= 0
 
-    Rigidbody2D enemyRig;   // enemy's rigidbody
+    protected Rigidbody2D enemyRig;   // enemy's rigidbody
+    protected Animator enemyAnim;
     
+    public GameObject player;
+
     // Start is called before the first frame update
-    void Start(){}
+    void Start()
+    {
+        enemyRig = GetComponent<Rigidbody2D>();
+        enemyAnim = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
-    void Update()
+    void Update(){}
+
+    void FixedUpdate()
     {
-        AttackPlayer();
+        Animation();
+        if(player != null)
+            AttackPlayer();
     }
 
     public abstract void AttackPlayer();        // find and attack the player
     public abstract void Health(int damage);    // decrement health and alter the enemy's behavior
+    public abstract void Animation();
 }

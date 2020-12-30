@@ -8,10 +8,14 @@ public class Bullet : MonoBehaviour
     public float bulletSpeed;   // how quickly the bullet moves
     public float xDir, yDir;    // the x and y directions the bullet travels
     public int damage;          // how much damage the bullet inflicts
-    public string targetTag;    // indicates the target the bullet can inflict damage on
+
+    Rigidbody2D bulletRig;
 
     // Start is called before the first frame update
-    // void Start(){}
+    void Start()
+    {
+        bulletRig = GetComponent<Rigidbody2D>();
+    }
 
     // Update is called once per frame
     // void Update(){}
@@ -20,7 +24,7 @@ public class Bullet : MonoBehaviour
     void FixedUpdate()
     {
         // change the bullets position based on its speed and direction
-        transform.position += new Vector3(xDir * bulletSpeed, yDir * bulletSpeed, 0);
+        bulletRig.velocity = new Vector2(xDir * bulletSpeed, yDir * bulletSpeed);
     }
 
     // OnCollisionEnter2D is called when the collider of this object collides with another object's collider

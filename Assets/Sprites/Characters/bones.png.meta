@@ -1,25 +1,43 @@
 fileFormatVersion: 2
-guid: 992a82fb1c15916458f8c75a53c21013
+guid: 18738a356ec1d904696cfc923d601c1d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5963901802341623262
-    second: floatskull_blue_0
+      213: -645464044440496766
+    second: bones_side_0
   - first:
-      213: -2937134740614731518
-    second: floatskull_blue_1
+      213: -2542456961574519764
+    second: bones_side_1
   - first:
-      213: 8609948522970643223
-    second: floatskull_yellow_0
+      213: 6281106707627692549
+    second: bones_side_2
   - first:
-      213: 8088780987781310845
-    second: floatskull_yellow_1
+      213: -6921682571789622819
+    second: bones_side_3
   - first:
-      213: 4442941302664998970
-    second: floatskull_purple_0
+      213: 3631403871238202601
+    second: bones_up_0
   - first:
-      213: -23729297926369838
-    second: floatskull_purple_1
+      213: 969903907407778509
+    second: bones_up_1
+  - first:
+      213: 906551114975076398
+    second: bones_up_2
+  - first:
+      213: -9102400123680280596
+    second: bones_up_3
+  - first:
+      213: 8568777912670982255
+    second: bones_down_0
+  - first:
+      213: 2910395577911359827
+    second: bones_down_1
+  - first:
+      213: -3692373334427894671
+    second: bones_down_2
+  - first:
+      213: -5715581933023965485
+    second: bones_down_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -128,49 +146,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: floatskull_blue_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af90db707e0b7164096173a30660d698
-      internalID: -5963901802341623262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floatskull_blue_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 432faeacd16ff264e97852d1dec8aca2
-      internalID: -2937134740614731518
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floatskull_yellow_0
+      name: bones_side_0
       rect:
         serializedVersion: 2
         x: 0
@@ -184,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 579318cc5b1948f4e9f821aaa4f2456d
-      internalID: 8609948522970643223
+      spriteID: 0f26418c45b249b488a3b95a625639c3
+      internalID: -645464044440496766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floatskull_yellow_1
+      name: bones_side_1
       rect:
         serializedVersion: 2
         x: 16
@@ -205,14 +181,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ee170149f450994c90416891f1923cb
-      internalID: 8088780987781310845
+      spriteID: f248900fec3ba384796c3d9fe5e0b0a9
+      internalID: -2542456961574519764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floatskull_purple_0
+      name: bones_side_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad01bdf9a4ed144d804b009f863683f
+      internalID: 6281106707627692549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bones_side_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ea235a2dece49499241a847cc86e48
+      internalID: -6921682571789622819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bones_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450287f8bacfa634d8d27e773cd447c5
+      internalID: 3631403871238202601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bones_up_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9f0e01bef9a3342b87ff7ae0fd4273
+      internalID: 969903907407778509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bones_up_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc31c1ceedf1db24a9fa4d1da9b129dd
+      internalID: 906551114975076398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bones_up_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b68d994ebf7b14a8806590034c6582
+      internalID: -9102400123680280596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bones_down_0
       rect:
         serializedVersion: 2
         x: 0
@@ -226,14 +328,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98076525af575744f824eed0af62d42c
-      internalID: 4442941302664998970
+      spriteID: 15e78c02bbf3adb4c96b7a134909d628
+      internalID: 8568777912670982255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floatskull_purple_1
+      name: bones_down_1
       rect:
         serializedVersion: 2
         x: 16
@@ -247,8 +349,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcf4a9fac41ce7e4cad3a07b044f6635
-      internalID: -23729297926369838
+      spriteID: d8f01cdf2b86d5b4fa814f3e82af68db
+      internalID: 2910395577911359827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bones_down_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34700746aec4c994c9f1f484fd9dd61d
+      internalID: -3692373334427894671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bones_down_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fee16d8320af3428db6b3b1f4d67b8
+      internalID: -5715581933023965485
       vertices: []
       indices: 
       edges: []
