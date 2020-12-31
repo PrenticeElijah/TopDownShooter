@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7583858973357765385}
   - component: {fileID: 7583858973357765398}
   - component: {fileID: 7583858973357765399}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floating Skull (Blue)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
-  health: 3
+  health: 5
   player: {fileID: 0}
 --- !u!58 &7583858973357765385
 CircleCollider2D:

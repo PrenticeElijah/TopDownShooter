@@ -44,7 +44,14 @@ public class Player : MonoBehaviour
     // PlayerMovement handles the player's velocity, allows the player to move around
     void PlayerMovement()
     {
-        if(Input.GetAxisRaw("Horizontal") != 0 && Input.GetAxisRaw("Vertical") != 0)
+        if(Input.GetKey(KeyCode.LeftArrow)
+        || Input.GetKey(KeyCode.RightArrow)
+        || Input.GetKey(KeyCode.DownArrow)
+        || Input.GetKey(KeyCode.UpArrow))
+        {
+            playerRig.velocity = new Vector2(0,0);      // if the player is shooting, they cannot move
+        }
+        else if(Input.GetAxisRaw("Horizontal") != 0 && Input.GetAxisRaw("Vertical") != 0)
         {
             // move the player diagonally
             // lower the move speed to keep the player's velocity down
@@ -57,7 +64,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            // keep the player still
+            // keep the player still if there are no inputs
             playerRig.velocity = new Vector2(0,0);
         }
     }

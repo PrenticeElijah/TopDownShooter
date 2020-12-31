@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8972804637687109146}
   - component: {fileID: 8972804637687109125}
   - component: {fileID: 8972804637687109124}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floating Skull (Purple)
   m_TagString: Enemy
   m_Icon: {fileID: 0}

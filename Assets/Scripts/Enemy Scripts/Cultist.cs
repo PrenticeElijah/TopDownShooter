@@ -8,8 +8,13 @@ public class Cultist : Enemy
 
     public GameObject cultistGun;   // the empty object where bullets are instantiated and shot from on the cultist
 
+    public ObjectPooling enemyPool;         // the pool from which to pull enemy bullets from
+    public float cultistFireRate = 3f;      // the rate of fire for the cultist
+    public float cultistFireTime = 0;       // the timer for when the cultist can fire again
+
     public override void AttackPlayer()
     {
+        // if the player is not within firing distance...
         if(!withinDistance)
         {
             FollowPlayer();     // follow the player if not within shooting distance
@@ -38,49 +43,50 @@ public class Cultist : Enemy
 
     public override void Animation()
     {
+        // if the player is not within firing distance...
         if(!withinDistance)
         {
             if(enemyRig.velocity.y > 0)
             {
-                enemyAnim.Play("CultistWalkUp");
+                enemyAnim.Play("CultistWalkUp");            // ...and if the cultist is moving up, play the cultist walking up 
                 transform.localScale = new Vector3(1,1,1);
             }
             else if(enemyRig.velocity.y < 0)
             {
-                enemyAnim.Play("CultistWalkDown");
+                enemyAnim.Play("CultistWalkDown");          // ...and if the cultist is moving down, play the cultist walking down
                 transform.localScale = new Vector3(1,1,1);
             }
             else
             {
-                enemyAnim.Play("CultistWalkSide");
+                enemyAnim.Play("CultistWalkSide");      // ...play the cultist walking to the side
                 if(enemyRig.velocity.x < 0)
-                    transform.localScale = new Vector3(-1,1,1);
+                    transform.localScale = new Vector3(-1,1,1);     // if the cultist is moving left, flip the cultist to appear to be walking to the left
                 else
-                    transform.localScale = new Vector3(1,1,1);
+                    transform.localScale = new Vector3(1,1,1);      // otherwise, keep the cultist at current scale to appear to be walking to the right
             }
         }
         else
         {
-            if((player.transform.position.x <= (transform.position.x + 3.5f))
-                && (player.transform.position.x > transform.position.x))
+            if((player.transform.position.x <= (transform.position.x + 4.5f))
+                && (player.transform.position.x >= transform.position.x + 2.5f))
             {
-                enemyAnim.Play("CultistShootSide");
+                enemyAnim.Play("CultistShootSide");             // if the player is between the cultist's right horizontal range, play the shooting side animation
                 transform.localScale = new Vector3(1,1,1);
             }
-            else if((player.transform.position.x >= (transform.position.x - 3.5f))
-                && (player.transform.position.x < transform.position.x))
+            else if((player.transform.position.x >= (transform.position.x - 4.5f))
+                && (player.transform.position.x <= transform.position.x - 2.5f))
             {
-                enemyAnim.Play("CultistShootSide");
-                transform.localScale = new Vector3(-1,1,1);
+                enemyAnim.Play("CultistShootSide");             // else if the player is between the cultist's left horizontal range, play the shooting side animation...
+                transform.localScale = new Vector3(-1,1,1);     // ...and flip the cultist to face the left
             }
             else if (player.transform.position.y > transform.position.y)
             {
-                enemyAnim.Play("CultistShootUp");
+                enemyAnim.Play("CultistShootUp");               // else if the player is above the cultist, play the shooting up animation
                 transform.localScale = new Vector3(1,1,1);
             }
             else
             {
-                enemyAnim.Play("CultistShootDown");
+                enemyAnim.Play("CultistShootDown");             // otherwise, play the shooting down animation
                 transform.localScale = new Vector3(1,1,1);
             }
         }
@@ -156,13 +162,29 @@ public class Cultist : Enemy
         }
     }
 
-    void Fire(float targetX, float targetY)
-    {}
-
-    void AttackPhase1(){}
+    // AttackPhase1 fires one bullet in the direction of the player
+    void AttackPhase1()
+    {
+        if(cultistFireTime >= cultistFireRate)
+        {
+            GameObject bullet = enemyPool.GetPooledObject();    // return a bullet from the enemy bullet pool
+            if(bullet != null)
+            {
+                bullet.transform.position = cultistGun.transform.position;      // place the bulelt at the cultist gun's position
+                bullet.GetComponent<EnemyBasicBullet>().xDir = player.transform.position.x - cultistGun.transform.position.x;           // xDir and yDir are difference between the player and gun's positions
+                bullet.GetComponent<EnemyBasicBullet>().yDir = player.transform.position.y + 0.5f - cultistGun.transform.position.y;
+                bullet.SetActive(true);     // set the bullet to active
+                cultistFireTime = 0;        // reset the fire timer
+            }
+        }
+        else
+        {
+            cultistFireTime += 0.1f;        // increment the fire timer
+        }
+    }
 
     void AttackPhase2(){}
-    
+
     // OnTriggerEnter2D is called when another object enters a trigger attached to this object
     void OnTriggerEnter2D(Collider2D obj)
     {
@@ -173,7 +195,6 @@ public class Cultist : Enemy
     // OnTriggerExit2D is called when another object exits a trigger attached to this object
     void OnTriggerExit2D(Collider2D obj)
     {
-        
         if(obj.gameObject.tag == "Player")
             withinDistance = false;
     }
