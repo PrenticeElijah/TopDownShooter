@@ -12,8 +12,6 @@ public class EnemyBasicBullet : Bullet
         shotDirection.Normalize();                          // Normalize keeps the direction of the Vector, but the magnitude is of 1
         bulletRig.velocity = shotDirection * bulletSpeed;   // fire the bullet at the specified speed
     }
-
-    // OnCollisionEnter2D is called when the collider of this object collides with another object's collider
     
     // OnCollisionEnter2D is called when the collider of this object collides with another object's collider
     void OnCollisionEnter2D(Collision2D collided)
@@ -21,6 +19,7 @@ public class EnemyBasicBullet : Bullet
         if(collided.gameObject.tag == "Player")
         {
             collided.gameObject.GetComponent<Player>().health--;    // reduce the player's health
+            gameManager.CountHealth();      // update the health UI text
             // Debug.Log("Collided");      
         }
         this.gameObject.SetActive(false);       // deactivate the bullet

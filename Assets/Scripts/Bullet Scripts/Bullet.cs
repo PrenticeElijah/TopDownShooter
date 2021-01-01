@@ -10,10 +10,13 @@ public abstract class Bullet : MonoBehaviour
 
     protected Rigidbody2D bulletRig;    // the bullet rigidbody, allows it to move
 
+    public GameManager gameManager;     // the game manager
+
     // Start is called before the first frame update
     void Start()
     {
-        bulletRig = GetComponent<Rigidbody2D>();    // get the rigidbody attached to the bullet
+        bulletRig = GetComponent<Rigidbody2D>();            // get the rigidbody attached to the bullet
+        gameManager = FindObjectOfType<GameManager>();      // get the game manager in the scene
     }
 
     // Update is called once per frame

@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 5770f5514523d80429c0aae4ff2c2354
+guid: 40317d96e4738b34bb5ef6c32ee2b7ed
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6554736390298987251
-    second: cursor_0
+      213: 8122915325607115165
+    second: heart_icon
+  - first:
+      213: -4866499174730741694
+    second: treasure_icon
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -48,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 36
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,22 +116,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cursor_0
+      name: heart_icon
       rect:
         serializedVersion: 2
-        x: 612
-        y: 132
-        width: 24
-        height: 24
+        x: 0
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efb768b408549044eac7931f5e6b6de1
-      internalID: 6554736390298987251
+      spriteID: 552b1890df15c6342a97f39bbefd1f12
+      internalID: 8122915325607115165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treasure_icon
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcf1d0c2a88bf34b8956d22cd4834e0
+      internalID: -4866499174730741694
       vertices: []
       indices: 
       edges: []
