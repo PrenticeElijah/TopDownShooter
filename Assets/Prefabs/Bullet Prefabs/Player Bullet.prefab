@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 223276768472398814}
   m_Layer: 8
   m_Name: Player Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,3 +138,4 @@ MonoBehaviour:
   xDir: 0
   yDir: 0
   damage: 1
+  gameManager: {fileID: 0}
