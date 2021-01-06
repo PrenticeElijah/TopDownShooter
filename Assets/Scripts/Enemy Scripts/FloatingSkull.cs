@@ -39,16 +39,6 @@ public class FloatingSkull : Enemy
         health -= damage;   // decrement the skull's health
 
         if (health <= 0)
-            this.gameObject.SetActive(false);   // deactivate the skull when health is less than or equal to 0
-    }
-
-    // OnTriggerEnter2D is called when another object enters a trigger attached to this object
-    void OnTriggerEnter2D(Collider2D obj)
-    {
-        // set the player value to the player object if the player enters the trigger
-        if(obj.gameObject.tag == "Player")
-        {
-            player = obj.gameObject;
-        }
+            EnemyDeath();   // if the skull's health is 0 or below, call EnemyDeath
     }
 }

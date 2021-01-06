@@ -10,7 +10,10 @@ public class TreasureChest : MonoBehaviour
     public GameManager gameManager;     // the game manager
     
     // Start is called before the first frame update
-    // void Start(){}
+    void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();      // find the GameManager in the scene
+    }
 
     // Update is called once per frame
     // void Update(){}

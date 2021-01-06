@@ -86,7 +86,7 @@ public class Skeleton : Enemy
         health -= damage;   // decrement the skeleton's health
 
         if(health <= 0)
-            this.gameObject.SetActive(false);   // set the skeleton gameobject to inactive
+            EnemyDeath();
     }
 
     public override void Animation()
@@ -108,16 +108,6 @@ public class Skeleton : Enemy
                 transform.localScale = new Vector3(-1,1,1);     // invert the skeleton if moving to the left
             else
                 transform.localScale = new Vector3(1,1,1);
-        }
-    }
-
-    // OnTriggerEnter2D is called when another object enters a trigger attached to this object
-    void OnTriggerEnter2D(Collider2D obj)
-    {
-        // set the player value to the player object if the player enters the trigger
-        if(obj.gameObject.tag == "Player")
-        {
-            player = obj.gameObject;
         }
     }
 }

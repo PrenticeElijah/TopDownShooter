@@ -36,7 +36,7 @@ public class Cultist : Enemy
         health -= damage;   // decrement the cultist's health
 
         if(health <= 0)
-            this.gameObject.SetActive(false);   // deactivate the cultist when health is less than or equal to 0
+            EnemyDeath();   // if the cultist's health is 0 or below, call EnemyDeath
         //else if(health <= 10)
             //phase = 2;
     }
@@ -165,6 +165,7 @@ public class Cultist : Enemy
     // AttackPhase1 fires one bullet in the direction of the player
     void AttackPhase1()
     {
+        // if the fire time is greater than or equal to the fire rate, the cultist can fire
         if(cultistFireTime >= cultistFireRate)
         {
             GameObject bullet = enemyPool.GetPooledObject();    // return a bullet from the enemy bullet pool
@@ -189,13 +190,13 @@ public class Cultist : Enemy
     void OnTriggerEnter2D(Collider2D obj)
     {
         if(obj.gameObject.tag == "Player")
-            withinDistance = true;
+            withinDistance = true;      // if the player enters the cultist's trigger, the player is within shooting distance
     }
 
     // OnTriggerExit2D is called when another object exits a trigger attached to this object
     void OnTriggerExit2D(Collider2D obj)
     {
         if(obj.gameObject.tag == "Player")
-            withinDistance = false;
+            withinDistance = false;     // if the player exits the cultist's trigger, the player is no longer in shooting distance
     }
 }

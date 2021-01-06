@@ -25,7 +25,7 @@ public abstract class Bullet : MonoBehaviour
     // FixedUpdate is called a fixed number of times per second
     void FixedUpdate()
     {
-        Fire();
+        Fire();     // move the bullet
     }
 
     public abstract void Fire();    // Fire is called to change the bullet's position based on its speed and direction

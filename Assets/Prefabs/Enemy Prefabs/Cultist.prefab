@@ -199,6 +199,9 @@ MonoBehaviour:
   health: 20
   player: {fileID: 0}
   gameManager: {fileID: 0}
+  startPos: {x: 0, y: 0, z: 0}
+  isDead: 0
+  reward: 500
   withinDistance: 0
   cultistGun: {fileID: 3164012635913338901}
   enemyPool: {fileID: 0}
@@ -219,4 +222,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.5}
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 3

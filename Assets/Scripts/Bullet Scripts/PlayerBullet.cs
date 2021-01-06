@@ -13,6 +13,7 @@ public class PlayerBullet : Bullet
     // OnCollisionEnter2D is called when the collider of this object collides with another object's collider
     void OnCollisionEnter2D(Collision2D collided)
     {
+        // if the bullet collides with the enemy...
         if(collided.gameObject.tag == "Enemy")
         {
             collided.gameObject.GetComponent<Enemy>().Health(damage);    // reduce the enemy's health
