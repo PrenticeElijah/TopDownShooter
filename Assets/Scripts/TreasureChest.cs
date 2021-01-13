@@ -26,6 +26,7 @@ public class TreasureChest : MonoBehaviour
         {
             opened = true;      // open the chest
             gameManager.CountTreasure(gold);        // update the treasure
+            gameManager.PlaySFX(2);                 // call PlaySFX to play the treasure sound effect
             this.gameObject.SetActive(false);       // set the chest to be inactive
         }
     }

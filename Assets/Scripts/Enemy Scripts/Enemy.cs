@@ -4,7 +4,6 @@ using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour
 {
-    
     public float speed;     // the enemy's speed
     public int health;      // the enemy's health. the enemy will deactivate if <= 0
 
@@ -50,6 +49,7 @@ public abstract class Enemy : MonoBehaviour
         isDead = true;                      // enemy is considered dead
         this.gameObject.SetActive(false);       // deactivate the enemy
         gameManager.CountTreasure(reward);      // reward the player
+        gameManager.CharacterDeath(this.gameObject.transform.position);     // call CharacterDeath to play the death animation
     }
     
     // OnCollisionEnter2D is called when the collider of this object collides with another object's collider

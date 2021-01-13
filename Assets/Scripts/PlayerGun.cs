@@ -10,11 +10,14 @@ public class PlayerGun : MonoBehaviour
 
     public float fireRate = 1f;     // the rate of fire for the player
     public float fireTime = 0;      // the timer for when the player can fire again
+
+    GameManager gameManager;
     
     // Start is called before the first frame update
     void Start()
     {
         player = transform.parent.gameObject.GetComponentInParent<Player>();    // find the parent player
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -73,6 +76,7 @@ public class PlayerGun : MonoBehaviour
         bullet = playerPool.GetPooledObject();  // return a bullet from the player bullet pool
         if(bullet != null)
         {
+            gameManager.PlaySFX(1);             // call PlaySFX to play the shooting sound effect
             bullet.transform.position = this.transform.position;    // place the bullet at the gun's position
             bullet.GetComponent<Bullet>().xDir = xSign;             // set the xDir and yDir variables of the bullet
             bullet.GetComponent<Bullet>().yDir = ySign;
