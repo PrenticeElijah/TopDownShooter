@@ -6,11 +6,11 @@ In the game, there are twelve rooms. The first two serve as tutorial rooms. Each
 Builds for PC, MAC, and Linux are available in the "Builds" folder.
 
 Art/Sound Credits:
-    - Player and Enemy Characters: https://opengameart.org/content/overhead-action-rpg-characters
-    - Tileset: https://opengameart.org/content/top-down-dungeon-tileset
-    - Icons: https://opengameart.org/content/roguelikerpg-icons
-    - UI Font: https://assetstore.unity.com/packages/2d/fonts/free-pixel-font-thaleah-140059
-    - Bullets: https://opengameart.org/content/bullet-collection-1-m484
-    - Explosion Animation: https://opengameart.org/content/explosion-animations
-    - SFX: https://opengameart.org/content/byte-man-sfx-1
-    - Music: https://opengameart.org/content/42-monster-rpg-2-music-tracks
+- Player and Enemy Characters: https://opengameart.org/content/overhead-action-rpg-characters
+- Tileset: https://opengameart.org/content/top-down-dungeon-tileset
+- Icons: https://opengameart.org/content/roguelikerpg-icons
+- UI Font: https://assetstore.unity.com/packages/2d/fonts/free-pixel-font-thaleah-140059
+- Bullets: https://opengameart.org/content/bullet-collection-1-m484
+- Explosion Animation: https://opengameart.org/content/explosion-animations
+- SFX: https://opengameart.org/content/byte-man-sfx-1
+- Music: https://opengameart.org/content/42-monster-rpg-2-music-tracks
